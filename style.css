@@ -1,0 +1,97 @@
+:root {
+    --fr-red: #ff1100;
+    --lg-green: #33cc33;
+    --dex-bg: #f0f0f0;
+    --panel-border: #4a4a4a;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pokedex-shell {
+    width: 100%;
+    max-width: 900px;
+    background: var(--dex-bg);
+    border: 10px solid var(--fr-red);
+    border-radius: 25px;
+    box-shadow: 8px 8px 0px #000;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    border-bottom: 4px double var(--panel-border);
+    margin-bottom: 30px;
+}
+
+h1 { color: var(--fr-red); font-size: 20px; }
+.subtitle { font-size: 8px; color: #666; margin-bottom: 15px; }
+
+.section-divider { margin: 20px 0; }
+
+h2 { 
+    display: inline-block;
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.johto-tag { background: var(--lg-green); }
+.hoenn-tag { background: #58c8f0; } /* Hoenn Blue */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.pkmn-card {
+    background: white;
+    border: 2px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.pkmn-card:hover {
+    background: #eaffea;
+}
+
+.pkmn-id {
+    font-size: 8px;
+    color: #aaa;
+    align-self: flex-start;
+}
+
+.pkmn-card img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated; /* Keeps pixels sharp */
+    margin: 10px 0;
+}
+
+.pkmn-name {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.altering-tag { background: #705898; } /* Ghost/Poison Purple */
+.cave-note { 
+    font-size: 7px; 
+    color: #cc0000; 
+    margin-top: 5px; 
+    text-transform: uppercase;
+}
