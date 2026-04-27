@@ -1,6 +1,6 @@
 const alteringNames = [
     "Mareep", "Flaaffy", "Ampharos", "Pineco", "Forretress", 
-    "Houndour", "Houndoom", "Teddiursa", "Aipom", "Shuckle", 
+    "Houndour", "Houndoom", "Teddiursa", "Ursaring", "Aipom", "Shuckle", 
     "Stantler", "Smeargle"
 ];
 
